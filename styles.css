@@ -1,0 +1,78 @@
+.line {
+    fill: none;
+    stroke-width: 6;
+}
+.multiline:hover {
+    cursor: pointer;
+}
+.dot {
+    pointer-events: all;
+    cursor: pointer;
+}
+body {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f3f6f5;
+}
+
+#data_processing {
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 50px;
+}
+#h2_title {
+    color: rgb(5, 5, 5);
+    text-align: center;
+    font-family: Futura;
+    font-weight: 300;
+    font-size: 38px;
+    font-style: oblique;
+    margin-bottom: 50px;
+}
+#h2_data_processing {
+    color: rgb(5, 5, 5);
+    text-align: left;
+    font-family: Futura;
+    font-weight: 300;
+    font-size: 38px;
+    font-style: oblique;
+}
+button {
+    font-size: 1.4375rem;
+    margin-left: 30px;
+    cursor: pointer;
+}
+label {
+    font-size: 1.5625rem;
+    padding: 5px 5px;
+}
+#formula1-image {
+    margin-top: 50px;
+}
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#chart {
+    cursor: pointer;
+}
+#filters {
+    margin-bottom: 50px;
+    width: auto;
+}
+#year {
+    font-size: 1.25rem;
+    width: auto;
+    margin-right: 30px;
+    cursor: pointer;
+}
+#grandprix {
+    font-size: 1.25rem;
+    width: auto;
+    margin-right: 30px;
+    cursor: pointer;
+}

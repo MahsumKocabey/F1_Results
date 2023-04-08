@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>F1 Race Results</title>
+        <link rel="icon" href="./Visuals/F1.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="script.js"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css"> 
+    </head>
+    <body>
+        <div id="main-container">
+            <div id="formula1-image">
+                <img id="f1" src="./Visuals/F1.svg" width="400px">
+            </div>
+            <div id="filters">
+                <h2 id="h2_title">Formula 1 Race Results</h2>
+                <label for="year">Year:</label>
+                <select id="year"></select>
+                <label for="grandprix">Grand Prix:</label>
+                <select id="grandprix"></select>
+                <button id="update">Update Chart</button>
+            </div>
+            <div id="chart"></div>
+            <div id="data_processing">
+                <h2 id="h2_data_processing">Data Processing</h2>
+                <p>
+                    The dataset used in this visualisation is, given by the lecturer, called "Formula 1 World Championship from 1950 to 2023",
+                    which could also be found on <br><b>Kaggle:</b> https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020 .
+                    <br>
+                    <br>
+                    The dataset consists of multiple CSV files, where each CSV file contains primary and foreign keys.
+                    The data was merged and processed by using Python scripts to create the visualisation.
+                    If interested, the script can be found in Figure 1 in the Appendix C of the report.
+                    <b>The merged files consist of:</b> results, drivers, constructors, races and the lapTimes.csv files.
+                    After merging the files, only some specific columns chosen from the whole dataset. It was not necessary to do
+                    much of data manipulation apart from changing column names. The data had some missing values, as expected, since
+                    some races could not be completed due to casualties, or some errors. This is also visualised to show if a driver
+                    at a particular race failed to complete the race.
+                    <br>
+                    <br>Lastly, the merged csv file exported as "driver_positions_per_lap" and imported into the code to fit the multi-line chart using D3.js.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
